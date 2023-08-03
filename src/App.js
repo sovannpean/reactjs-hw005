@@ -6,6 +6,8 @@ import ProductsPage from './pages/ProductsPage';
 import UsersPage from './pages/UsersPage';
 import Navebar from './components/Navebar';
 import Footer from './components/Footer';
+import DetailPage from './pages/DetailPage';
+import FaqsPage from './pages/FaqsPage'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='/categories' element={<CategoriesPage/>}/>
           <Route path='/products' element={<ProductsPage/>}/>
           <Route path='/users' element={<UsersPage/>}/>
+          <Route path='/detail/:id' element={<DetailPage/>}/>
+          <Route path='/faq' element={<FaqsPage/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
